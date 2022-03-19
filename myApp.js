@@ -6,7 +6,7 @@ let message = { message: "Hello json" };
 app.get("/json", (request, response) => {
   if (process.env.MESSAGE_STYLE === "uppercase") {
     response.json({ message: "HELLO JSON" });
-  } else {
+  } else { 
     response.json(message);
   }
 });
